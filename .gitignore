@@ -10,3 +10,5 @@ arrays 3.js
 strings 3.js
 numbers 3.js
 objects 3.js
+.eslintrc
+.eslintignore
