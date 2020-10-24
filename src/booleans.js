@@ -1,62 +1,103 @@
-const negate = a => {
-  // your code here
+const negate = (a) => {
+  let b = !a;
+  return b;
 };
 
-const both = (a, b) => {
-  // your code here
+let both = (a, b) => {
+  if(a === true && b === true) {
+    both = true;
+  } else {
+    both = false;
+  } {
+    return both;
+  }
 };
 
 const either = (a, b) => {
-  // your code here
+  let or;
+  if(a === true || b === true) {
+    or = true;
+  } else {
+    or = false;
+  } {
+    return or;
+  }
 };
 
-const none = (a, b) => {
-  // your code here
+let none = (a, b) => {
+  if(a === false && b === false) {
+    none = true;
+  } else {
+    none = false;
+  } {
+    return none;
+  }
 };
 
-const one = (a, b) => {
-  // your code here
+let one = (a, b) => {
+  if(a === b) {
+    one = false;
+  } else if(a !== b) {
+    one = true;
+  } {
+    return one;
+  }
 };
 
-const truthiness = a => {
-  // your code here
+const truthiness = (a) => {
+  return (a ? true : false);
 };
 
 const isEqual = (a, b) => {
-  // your code here
+  return (a === b ? true : false);
 };
 
 const isGreaterThan = (a, b) => {
-  // your code here
+  return (a > b ? true : false);
 };
 
 const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  return (a <= b ? true : false);
 };
 
 const isOdd = a => {
-  // your code here
+  return (a % 2 === 1 ? true : false);
 };
 
 const isEven = a => {
-  // your code here
+  return (a % 2 === 0 ? true : false);
 };
 
-const isSquare = a => {
-  // your code here
+let isSquare = a => {
+  let squareRoot = Math.sqrt(a);
+  if(a === 0) {
+    isSquare = true;
+  } else if(a % squareRoot === 0) {
+    isSquare = true;
+  } else {
+    isSquare = false;
+  }
+  return isSquare;
 };
 
 const startsWith = (char, string) => {
-  // your code here
+  return (char === string.charAt(0) ? true : false);
 };
 
-const containsVowels = string => {
-  // your code here
-};
+let containsVowels = (string) => {      
+  let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];      
+  for (i = 0; i < vowels.length; i += 1) {     /*LOOP START*/      
+    let trueResult = string.includes(vowels[i]);       
+    if (trueResult === true) {        
+      return true;      
+    }     
+  }; /*LOOP END*/  
+    return false;}
 
 const isLowerCase = string => {
-  // your code here
-};
+  return string === string.toLowerCase();
+  }
+
 
 module.exports = {
   negate,
