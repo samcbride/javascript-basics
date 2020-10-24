@@ -50,9 +50,16 @@ const startsWith = (char, string) => {
   // your code here
 };
 
-const containsVowels = string => {
-  // your code here
-};
+let containsVowels = (string) => {  
+    let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];  
+    for (i = 0; i < vowels.length; i += 1) {     /*LOOP START*/
+      let trueResult = string.includes(vowels[i]); 
+      if (trueResult === true) {
+        return true;
+      } 
+    }; /*LOOP END*/
+  return false;
+}
 
 const isLowerCase = string => {
   // your code here
