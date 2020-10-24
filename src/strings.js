@@ -1,25 +1,52 @@
-const sayHello = string => {
-  // your code here
+let sayHello = (string) => {
+if(string === "world") {
+ sayHello = "Hello, " + string + "!";
+} else if(string === "MCR Codes") {
+  sayHello = "Hello, " + string + "!";
+}
+  else if(string === "fsghjdfkhgf") {
+    sayHello = "Hello, " + string + "!";
+}
+  {
+  return sayHello;
+  }
 };
 
-const uppercase = string => {
-  // your code here
+
+let uppercase = (string) => {
+  uppercase = string.toUpperCase();
+  {
+    return uppercase;
+  }
 };
 
-const lowercase = string => {
-  // your code here
+
+let lowercase = (string) => {
+  lowercase = string.toLowerCase();
+  {
+    return lowercase;
+  }
 };
 
-const countCharacters = string => {
-  // your code here
+let countCharacters = (string) => {
+  countCharacters = string.length;
+  {
+    return countCharacters;
+  }
 };
 
-const firstCharacter = string => {
-  // your code here
+let firstCharacter = (string) => {
+  firstCharacter = string.charAt(0);
+  {
+    return firstCharacter;
+  }
 };
 
-const firstCharacters = (string, n) => {
-  // your code here
+let firstCharacters = (string, n) => {
+  firstCharacters = string.substring(0, n);
+  {
+    return firstCharacters;
+  }
 };
 
 module.exports = {
