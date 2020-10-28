@@ -1,63 +1,92 @@
 const getNthElement = (index, array) => {
-  // your code here
-};
+ return array[index % array.length]
+ };
 
 const arrayToCSVString = array => {
-  // your code here
+  return array.toString();
 };
 
 const csvStringToArray = string => {
-  // your code here
+  return string.split(",");
 };
 
 const addToArray = (element, array) => {
-  // your code here
+ array.push(element);
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+ let array2 = array.concat(element);
+ return array2;
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  array.splice(index, 1);
+  return array;
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+  return numbers.toString()
+                .split(",")
 };
 
-const uppercaseWordsInArray = strings => {
-  // your code here
+const uppercaseWordsInArray = (strings) => {
+  return strings.toString()
+                .toUpperCase()
+                .split(",")
 };
 
-const reverseWordsInArray = strings => {
-  // your code here
-};
+const reverseWordsInArray = (strings) => {
+ return strings.map((strings) => {
+  return strings.split("").reverse().join("")
+});
+  }
 
-const onlyEven = numbers => {
-  // your code here
-};
+const onlyEven = (numbers) => {
+  return numbers.filter((numbers) => numbers % 2 === 0);
+}
 
 const removeNthElement2 = (index, array) => {
-  // your code here
-};
+  copyArray = array.slice(0, array.length);
+  copyArray.splice(index, 1);
+  return copyArray;
+    }
 
-const elementsStartingWithAVowel = strings => {
-  // your code here
-};
+ // OPTION 1 //
+const elementsStartingWithAVowel = (strings) => {
+  let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+  let items = [];
+  for (i = 0; i < vowels.length; i +=1) {  
+    for (j = 0; j < strings.length; j++) {
+      if (strings[j].charAt(0) === vowels[i]) {
+        items.push(strings[j])
+      }
+    }
+  }   
+  return items 
+}
+
+// OPTION 2//
+/*const elementsStartingWithAVowel = (strings) => {
+  let rex = /^[aeiou]/;
+  return strings.filter(strings => rex.test(strings));
+};*/
 
 const removeSpaces = string => {
-  // your code here
+  let reggy = string.replace(/\s/g, "");
+  return reggy;
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  const add = (x, y) => x + y;
+  return numbers.reduce(add);
 };
 
 const sortByLastLetter = strings => {
-  // your code here
-};
-
+  strings.sort((x, y) => x.charCodeAt(x.length - 1) 
+  - y.charCodeAt(y.length - 1));
+  return strings;
+}  
+  
 module.exports = {
   getNthElement,
   arrayToCSVString,

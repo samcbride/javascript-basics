@@ -84,18 +84,6 @@ const startsWith = (char, string) => {
   return (char === string.charAt(0) ? true : false);
 };
 
-<<<<<<< HEAD
-let containsVowels = (string) => {  
-    let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];  
-    for (i = 0; i < vowels.length; i += 1) {     /*LOOP START*/
-      let trueResult = string.includes(vowels[i]); 
-      if (trueResult === true) {
-        return true;
-      } 
-    }; /*LOOP END*/
-  return false;
-}
-=======
 let containsVowels = (string) => {      
   let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];      
   for (i = 0; i < vowels.length; i += 1) {     /*LOOP START*/      
@@ -105,7 +93,6 @@ let containsVowels = (string) => {
     }     
   }; /*LOOP END*/  
     return false;}
->>>>>>> cec9f527643d00f138185bca8c50a5df857a19c8
 
 const isLowerCase = string => {
   return string === string.toLowerCase();
