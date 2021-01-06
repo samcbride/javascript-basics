@@ -1,16 +1,20 @@
+// let sayHello = (string) => {
+// if(string === "world") {
+//  sayHello = "Hello, " + string + "!";
+// } else if(string === "MCR Codes") {
+//   sayHello = "Hello, " + string + "!";
+// }
+//   else if(string === "fsghjdfkhgf") {
+//     sayHello = "Hello, " + string + "!";
+// }
+//   {
+//   return sayHello;
+//   }
+// };
+
 let sayHello = (string) => {
-if(string === "world") {
- sayHello = "Hello, " + string + "!";
-} else if(string === "MCR Codes") {
-  sayHello = "Hello, " + string + "!";
-}
-  else if(string === "fsghjdfkhgf") {
-    sayHello = "Hello, " + string + "!";
-}
-  {
-  return sayHello;
-  }
-};
+  return sayHello = `Hello, ${string}!`;
+  };
 
 
 let uppercase = (string) => {

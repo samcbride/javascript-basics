@@ -35,15 +35,25 @@ const absolute = a => {
 };
 
 let quotient = (a, b) => {
-   if(a <= 0 || b <= 0) {
-     quotient = Math.ceil(a / b);
-   } else {
-     quotient = Math.floor(a / b);
-   } 
-   {
-   return quotient;
-   }
+  if(a <= 0 || b <= 0) {
+    return Math.ceil(a / b);
+  } else {
+    return Math.floor(a / b);
+  } 
 };
+// Below is the original code, 
+// above is a less verbose way
+
+// let quotient = (a, b) => {
+//    if(a <= 0 || b <= 0) {
+//      quotient = Math.ceil(a / b);
+//    } else {
+//      quotient = Math.floor(a / b);
+//    } 
+//    {
+//    return quotient;
+//    }
+// };
 
 const remainder = (a, b) => {
   return(a % b);
