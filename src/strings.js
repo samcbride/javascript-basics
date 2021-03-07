@@ -1,56 +1,25 @@
-// let sayHello = (string) => {
-// if(string === "world") {
-//  sayHello = "Hello, " + string + "!";
-// } else if(string === "MCR Codes") {
-//   sayHello = "Hello, " + string + "!";
-// }
-//   else if(string === "fsghjdfkhgf") {
-//     sayHello = "Hello, " + string + "!";
-// }
-//   {
-//   return sayHello;
-//   }
-// };
-
 let sayHello = (string) => {
-  return sayHello = `Hello, ${string}!`;
-  };
-
-
-let uppercase = (string) => {
-  uppercase = string.toUpperCase();
-  {
-    return uppercase;
-  }
+  return (sayHello = `Hello, ${string}!`);
 };
 
+let uppercase = (string) => {
+  return (uppercase = string.toUpperCase());
+};
 
 let lowercase = (string) => {
-  lowercase = string.toLowerCase();
-  {
-    return lowercase;
-  }
+  return (lowercase = string.toLowerCase());
 };
 
 let countCharacters = (string) => {
-  countCharacters = string.length;
-  {
-    return countCharacters;
-  }
+  return (countCharacters = string.length);
 };
 
 let firstCharacter = (string) => {
-  firstCharacter = string.charAt(0);
-  {
-    return firstCharacter;
-  }
+  return (firstCharacter = string.charAt(0));
 };
 
 let firstCharacters = (string, n) => {
-  firstCharacters = string.substring(0, n);
-  {
-    return firstCharacters;
-  }
+  return (firstCharacters = string.substring(0, n));
 };
 
 module.exports = {
@@ -59,5 +28,5 @@ module.exports = {
   lowercase,
   countCharacters,
   firstCharacter,
-  firstCharacters
+  firstCharacters,
 };
